@@ -2,7 +2,7 @@
 
 [日本語 (Japanese)](README.md) | [English](README_en.md)
 
-![Screenshot](ss.png)
+![Screenshot](ss2.png)
 
 An unofficial application to measure and visualize network latency (TCP ping) to specific PC Black Desert Online (BDO) servers in real-time.
 It was originally created to objectively verify if specific PvP channels (like the Japanese "Marni-2ch" server) are actually experiencing lag.
