@@ -1,5 +1,7 @@
 # BDO Ping Monitor (黒い砂漠 サーバーPing測定ツール)
 
+[日本語 (Japanese)](README.md) | [English](README_en.md)
+
 ![スクリーンショット](ss.png)
 
 PC版「黒い砂漠（BDO）」の特定サーバーへのネットワーク遅延（Ping値）を、リアルタイムで測定・可視化する非公式アプリケーションです。
