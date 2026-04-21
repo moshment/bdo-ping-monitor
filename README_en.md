@@ -11,6 +11,15 @@ It was originally created to objectively verify if specific PvP channels (like t
 > By default, the app is configured for the Japanese community. However, **you do not need to recompile the app** to change this.
 > You can fully customize the servers by editing `servers.txt`. The very first line in the text file will become your "Main" server, replacing the Japanese default.
 
+## Why was this tool created? (How to identify lag causes)
+While many players complain about specific servers (like PvP channels or Solare) being "laggy," some players experience no lag at all (maintaining a constant ping of ~10ms). 
+Please use this tool to determine whether the cause of the lag is actually on the "Black Desert server side" or your own "personal network environment."
+
+**💡 Testing Tip:**
+Use `servers.txt` to set your PvP server as the Main server, and a normal PvE channel server as the Sub server. Measure both pings at the same time:
+- **If BOTH pings are unusually high:** The problem is likely with your own personal network environment (your ISP, router, Wi-Fi, etc.).
+- **If ONLY the PvP server has a high ping, but the normal channel is fine:** The problem is likely on the Black Desert server side.
+
 ## Features
 - **Real-time Monitoring:** Performs a TCP connection test approximately every 5 seconds and displays the ping history on a chart.
 - **Lightweight & Portable:** Built with Rust & Tauri. It runs as a standalone `.exe` without any installation.
