@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp:*)",
+      "Bash(,)",
+      "Bash(find /home/mosh/bdo-ping-tauri -type f -name *.rs -o -name *.ts -o -name *.js -o -name *.json -o -name *.html)",
+      "Bash(rm -rf /mnt/ssd1/share/bdo-ping-tauri)",
+      "Bash(cp -r /home/mosh/bdo-ping-tauri /mnt/ssd1/share/)"
+    ]
+  }
+}

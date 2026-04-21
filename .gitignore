@@ -1,0 +1,22 @@
+# 開発環境・ビルド関連の無視設定
+node_modules/
+/target
+dist/
+build/
+.env
+
+# Tauri/Rust 関連
+src-tauri/target/
+src-tauri/Cargo.lock
+
+# OS生成ファイル
+.DS_Store
+Thumbs.db
+
+# 今回の配布用に作成したファイルやフォルダ（Git管理から外す）
+BDO-Ping-Monitor-Portable/
+BDO-Ping-Monitor-v1.0/
+*.zip
+
+# その他の一時ファイル
+*.log
