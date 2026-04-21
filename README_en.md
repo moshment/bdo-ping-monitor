@@ -35,7 +35,17 @@ You can add your region's servers by editing `servers.txt` located in the same f
 NA-Solare: 12.34.56.78
 EU-Solare: 98.76.54.32
 ```
-After saving the file and restarting the app, you can select your newly added server from the dropdown menu.
+
+### How to find your Server IP
+If you don't know the IP address of your specific server/channel, you can easily find it using Windows Resource Monitor:
+
+1. Launch Black Desert Online and log in to the specific server (channel) you want to measure.
+2. Press `Windows Key`, type `resmon`, and open **Resource Monitor**.
+3. Go to the **Network** tab.
+4. Look for `BlackDesert64.exe` in the "Processes with Network Activity" list and check the box next to it.
+5. Look at the **TCP Connections** section below. 
+6. Find the connection where the **Remote Port** is exactly **`8889`**. That is definitely your current game server.
+7. Copy the **Remote Address** (IP) of that connection and add it to your `servers.txt`.
 
 ## For Developers (Build from Source)
 
