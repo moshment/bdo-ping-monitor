@@ -5,8 +5,7 @@
   "build": {
     "beforeBuildCommand": "",
     "beforeDevCommand": "",
-    "frontendDist": "../dist",
-    "devUrl": "http://localhost:3456"
+    "frontendDist": "../dist"
   },
   "app": {
     "withGlobalTauri": true,

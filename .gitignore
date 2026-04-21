@@ -1,7 +1,7 @@
 # 開発環境・ビルド関連の無視設定
 node_modules/
 /target
-dist/
+# dist/  (Tauri frontend source as plain HTML/CSS/JS)
 build/
 .env
 
