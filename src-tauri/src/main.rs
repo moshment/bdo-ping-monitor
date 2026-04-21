@@ -43,13 +43,7 @@ async fn measure_ping(ip: String, port: u16) -> PingResult {
 
 #[tauri::command]
 fn get_servers(_app_handle: tauri::AppHandle) -> Vec<ServerConfig> {
-    let mut servers = vec![
-        ServerConfig {
-            name: "malni-2ch".to_string(),
-            ip: "20.222.139.220".to_string(),
-            port: 8889,
-        }
-    ];
+    let mut servers = Vec::new();
 
     // Try to read servers.txt from the same directory as the executable
     if let Ok(exe_path) = std::env::current_exe() {
@@ -75,6 +69,15 @@ fn get_servers(_app_handle: tauri::AppHandle) -> Vec<ServerConfig> {
         }
     }
     
+    // Fallback if servers.txt is missing or empty
+    if servers.is_empty() {
+        servers.push(ServerConfig {
+            name: "malni-2ch".to_string(),
+            ip: "20.222.139.220".to_string(),
+            port: 8889,
+        });
+    }
+
     servers
 }
 
